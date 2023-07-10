@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>KPMB</h1>
+        <strong>COURSE</strong> <br><br>
+
+        <form action ="" method="POST">
+            {% csrf_token %}
+                Course Code:
+                <input name ="Code">
+                <br><br>
+                Course Name:
+                <input name="Name">
+                <br><br>
+                Course Date:
+                <input name ="Date">
+                <br><br>
+                <input type="Submit" value="SAVE">
+        </form>
+        {{message}}
+    </body>
+</html>

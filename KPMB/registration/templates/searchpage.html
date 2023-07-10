@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPM BERANANG</title>
+</head>
+<body>
+
+    <h1>KOLEJ PROFESIONAL MARA BERANANG</h1>
+    <br>
+    <strong>SEARCH COURSE INFORMATION</strong>
+    <br>
+    <form method="GET" action="searchpage">
+        <div class="form-inline">
+            <input type="text" placeholder="search" name="search" class="form-control" required="required"/>
+        </div>
+
+        <tbody>
+            {% for members in members %p}
+            <tr>
+                <td>{{ members.code}}</td>
+                <td>{{ members.desc}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    <a href = "{% url 'regprogramme' %}">ADD NEW PROGRAMME</a>
+    <br><br>
+
+
+</body>
+</html>
